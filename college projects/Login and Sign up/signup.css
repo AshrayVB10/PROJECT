@@ -1,0 +1,95 @@
+*{
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+}
+
+body{
+    display: grid;
+    place-items: center;
+    margin: 0;
+    padding: 0 32px;
+    background-image: linear-gradient( 103.9deg,  rgba(12,166,180,1) 3%, rgba(100,51,161,1) 93.9% );
+}
+
+@media (width >= 500px){
+    body{
+        padding: 0;
+    }
+}
+
+.card{
+    overflow: hidden;
+    position: relative;
+    z-index: 3;
+    width: 100%;
+    margin: 0 20px;
+    padding: 170px 30px 54px;
+    border-radius: 1.25rem;
+    background: #fff;
+    text-align: center;
+    box-shadow: 0 100px 100px rgb(0, 0, 0 / 10%);
+}
+
+@media (width >= 500px){
+    .card {
+        margin: 0;
+        width: 360px;
+    }
+}
+.card >h2 {
+    font-size: 36px;
+    font-weight: 600;
+    margin: 0 0 6px;
+}
+.card > h3{
+    color: #837f90;
+    margin: 0 0 40px;
+    font-weight: 500;
+    font-size: 1rem;
+}
+.card > footer{
+    color: #a1a1a1;
+}
+.card > footer > a{
+    color: #216ce7;
+}
+
+.form{
+    display: grid;
+    gap: 16px;
+    margin: 0 0 36px;
+}
+.form > input, .form > button{
+    width: 100%;
+    height: 56px;
+    border-radius: 28px;
+}
+.form > input{
+    border: 2px solid #ebebeb;
+    font-family: inherit;
+    font-size: 16px;
+    padding: 0 24px;
+    color: #11274c;
+}
+.form > input::placeholder{
+    color: #cac8c8;
+}
+.form > button{
+    cursor: pointer;
+    width: 100%;
+    height: 56px;
+    padding: 0 16px;
+    background: #703eff;
+    color: #f9f9f9;
+    border: 0;
+    font-family: inherit;
+    font-size: 1rem;
+    font-weight: 600;
+    text-align: center;
+    letter-spacing: 2px;
+    transition: all 0.375s;
+}
+
